@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+p {
+  font-family: cursive;
+  margin: 10px 0;
+}
+
+#switches {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#switches li {
+  float: left;
+  border: 3px solid #000;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#green {
+  background-color: green;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#pink {
+  background-color: pink;
+}
+
+#rgb {
+  background: linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red);
+  background-size: 600%;
+  animation: rgbEffect 5s linear infinite;
+}
+
+@keyframes rgbEffect {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
